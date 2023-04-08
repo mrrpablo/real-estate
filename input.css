@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&family=Montserrat:wght@500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* nav */
+header {
+  background: #ffffff;
+  opacity: 0.98;
+  box-shadow: 0px 5px 34px rgba(0, 0, 0, 0.05);
+}
+
+.btn {
+  border: 1px solid black;
+}
+
+.btn:hover {
+  background: transparent;
+  color: black;
+}
+
+.btn-serve {
+  border: 1px solid white;
+}
+
+.btn-serve:hover {
+  background: transparent;
+  color: white;
+}
+
+.offer {
+  background: rgba(237, 245, 254, 0.42);
+}
+
+.para {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.team{
+  background: #e4e4f4;
+  border-radius: 15px;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.bg {
+  background: rgba(234, 243, 252, 0.65);
+  filter: blur(400px);
+  width: 55%;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+}
+
+.search {
+  background: #ffffff;
+  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+}
+
+.vl {
+  border-left: 2px solid #d6d6d6;
+  height: 50px;
+}
+
+.cta {
+  background: #ffffff;
+  border: 2px solid #d6d6d6;
+  border-radius: 10px;
+  padding: 15px 30px;
+}
+
+/* hamburger menu */
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
