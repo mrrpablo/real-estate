@@ -8,7 +8,7 @@ btn.addEventListener('click', () => {
 })
 
 const team =[
-    { img:'./img/pm.png', title:'Marketing Manager'},
+    { img:'./img/pm2.png', title:'Marketing Manager'},
     { img:'./img/mh.png', title:'Brand Manager'},
     { img:'./img/hos.png', title:'Brand Manager'}
 ]
@@ -18,14 +18,14 @@ output.innerHTML = team.map((teamMembers)=>{
     const {img, title}= teamMembers
     return(
         `
-        <div class="md:w-[32%] bg-black ">
-        <div class=" rounded-full h-[500px] text-center" style="backgroundColor: black;">
-            <img src=${img} alt="" class="object-cover" 
-                style='height:350px; object-fit: cover; '>
+        <div class="md:w-[32%]">
+            <div class=" rounded-lg h-[100px]  bg-gray-400">
+                <img src=${img} alt=""
+                    style='height:350px; object-fit: cover;'>
+            </div>
+            <p class="font-[500] text-[23px] leading-[23px] text-[#8b8b8b] my-[20px] text-center">${title}
+            </p>
         </div>
-        <p class="font-[500] text-[23px] leading-[23px] text-[#8b8b8b] my-[20px] text-center">${title}
-        </p>
-    </div>
         `
     )
 })
